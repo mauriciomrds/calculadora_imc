@@ -14,6 +14,14 @@ public class Pessoa {
 	
 	private Date dataCadastros;
 
+	public Date getDataCadastros() {
+		return dataCadastros;
+	}
+
+	public void setDataCadastros(Date dataCadastros) {
+		this.dataCadastros = dataCadastros;
+	}
+
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
