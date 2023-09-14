@@ -4,13 +4,14 @@ import java.util.Date;
 
 public class Pessoa {
 	
+	private String cpf;
 	private String nome;
 	
 	private String sobrenome;
 	
 	private int idade;
 	
-	private Date dataNascimento;
+	private String dataNascimento;
 	
 	private Date dataCadastros;
 
@@ -18,15 +19,23 @@ public class Pessoa {
 		return dataCadastros;
 	}
 
+	public String getCpf(String string) {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
 	public void setDataCadastros(Date dataCadastros) {
 		this.dataCadastros = dataCadastros;
 	}
 
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
@@ -52,6 +61,11 @@ public class Pessoa {
 
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
+		
+		
+	}
+
+		
 	}
 	
-}
+
